@@ -56,7 +56,7 @@ export const Services: React.FC = () => {
   const handleWhatsAppRedirect = () => {
     if (!selectedPackage) return;
     const message = `Hi! I've placed an order for the ${selectedPackage.name} (${selectedPackage.price}). My name is ${customerInfo.name}. Please help me complete the payment.`;
-    const url = `https://wa.me/15551234567?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/8667786493?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
@@ -322,7 +322,7 @@ export const Services: React.FC = () => {
                   >
                     {demoState.isLoading ? (
                       <span className="flex items-center gap-2">
-                        <Loader2 className="animate-spin" size={20} /> Neural Processing...
+                        <Loader2 className="animate-spin" size={20} /> AROS Processing...
                       </span>
                     ) : "Generate AI Concept"}
                   </Button>
@@ -336,7 +336,7 @@ export const Services: React.FC = () => {
               <div className="bg-[#0c0c0c] rounded-2xl p-8 border border-slate-800 flex flex-col h-full min-h-[400px] shadow-inner relative overflow-hidden font-mono">
                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-accent-500"></div>
                  <h3 className="text-sm font-bold text-slate-500 mb-6 flex items-center gap-2 uppercase tracking-widest">
-                   <Cpu size={16} className="text-brand-500" /> System Output
+                   <Cpu size={16} className="text-brand-500" /> AROS Output
                  </h3>
                  
                  {demoState.result ? (
@@ -362,14 +362,14 @@ export const Services: React.FC = () => {
                      {demoState.isLoading ? (
                        <div className="space-y-6 text-center">
                           <div className="w-16 h-16 border-4 border-slate-800 border-t-brand-500 rounded-full animate-spin mx-auto shadow-[0_0_30px_rgba(14,165,233,0.2)]"></div>
-                          <p className="text-brand-500 animate-pulse">Running generative models...</p>
+                          <p className="text-brand-500 animate-pulse">AROS generative models...</p>
                        </div>
                      ) : (
                        <>
                           <div className="w-20 h-20 rounded-full bg-slate-900 flex items-center justify-center mb-6">
                              <Sparkles size={32} className="opacity-20" />
                           </div>
-                          <p className="text-center max-w-xs text-sm">Awaiting input parameters to initialize generation sequence.</p>
+                          <p className="text-center max-w-xs text-sm">Please Wait.</p>
                        </>
                      )}
                    </div>

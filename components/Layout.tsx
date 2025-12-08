@@ -137,7 +137,7 @@
 //                 <a href="#" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
 //                   <Instagram size={20} />
 //                 </a>
-//                 <a href="mailto:contact@aroscreative.com" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
+//                 <a href="mailto:aroscreativeagency@gmail.com" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
 //                   <Mail size={20} />
 //                 </a>
 //               </div>
@@ -160,7 +160,7 @@
 //                   <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center group-hover:bg-brand-500/20 group-hover:text-brand-400 transition-all">
 //                     <Mail size={16} />
 //                   </div>
-//                   contact@aroscreative.com
+//                   aroscreativeagency@gmail.com
 //                 </li>
 //                 <li className="flex items-center gap-3 group">
 //                   <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center group-hover:bg-brand-500/20 group-hover:text-brand-400 transition-all">
@@ -195,6 +195,7 @@ import { Menu, X, Cpu, Instagram, Mail, Phone, ChevronRight } from 'lucide-react
 import { Button } from './Button';
 import { ChatWidget } from './ChatWidget';
 import { BackgroundEffect } from './BackgroundEffect';
+import arosLogo from './assets/aros.webp';
 
 export const Layout: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -242,7 +243,7 @@ export const Layout: React.FC = () => {
               <div className="relative w-10 h-10 flex items-center justify-center">
                 <div className="absolute inset-0 bg-brand-500 rounded-xl rotate-45 opacity-20 group-hover:rotate-90 transition-transform duration-500"></div>
                 <div className="absolute inset-0 bg-brand-500 rounded-xl rotate-45 blur-md opacity-40 group-hover:opacity-60 transition-opacity"></div>
-                <Cpu className="relative text-brand-400 w-6 h-6 z-10" />
+               <img src={arosLogo} className="relative text-brand-400 w-6 h-6 z-10" />
               </div>
               <span className="text-2xl font-display font-bold text-white tracking-tight">
                 AROS<span className="text-brand-400">.AI</span>
@@ -332,10 +333,10 @@ export const Layout: React.FC = () => {
                 Pioneering the future of digital creativity. We blend neural networks with human artistry to forge brands that don't just exist—they dominate.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
+                <a href="https://www.instagram.com/aros_creative_agency?igsh=MTBmN2VodGc2M3R4aA==" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
                   <Instagram size={20} />
                 </a>
-                <a href="mailto:contact@aroscreative.com" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
+                <a href="mailto:aroscreativeagency@gmail.com" className="w-10 h-10 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:-translate-y-1 transition-all duration-300 shadow-lg">
                   <Mail size={20} />
                 </a>
               </div>
@@ -358,19 +359,19 @@ export const Layout: React.FC = () => {
                   <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center group-hover:bg-brand-500/20 group-hover:text-brand-400 transition-all">
                     <Mail size={16} />
                   </div>
-                  contact@aroscreative.com
+                  aroscreativeagency@gmail.com
                 </li>
                 <li className="flex items-center gap-3 group">
                   <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center group-hover:bg-brand-500/20 group-hover:text-brand-400 transition-all">
                     <Phone size={16} />
                   </div>
-                  +1 (555) 123-4567
+                  +91 8667786493
                 </li>
                 <li className="flex items-center gap-3 group">
                   <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center group-hover:bg-brand-500/20 group-hover:text-brand-400 transition-all">
                     <Instagram size={16} />
                   </div>
-                  @aroscreative
+                  aros_creative_agency
                 </li>
               </ul>
             </div>

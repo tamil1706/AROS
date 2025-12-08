@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Bot, Sparkles } from 'lucide-react';
 import { chatWithAI } from '../services/gemini';
 import { ChatMessage } from '../types';
+import arosLogo from './assets/aros.webp';
 
 export const ChatWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +41,7 @@ export const ChatWidget: React.FC = () => {
   };
 
   const openWhatsApp = () => {
-    window.open(`https://wa.me/15551234567?text=Hi, I was chatting with your AI bot and would like to speak to a human.`, '_blank');
+    window.open(`https://wa.me/8667786493?text=Hi, I was chatting with your AI bot and would like to speak to a human.`, '_blank');
   };
 
   return (
@@ -73,7 +74,7 @@ export const ChatWidget: React.FC = () => {
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-brand-400 to-accent-600 flex items-center justify-center shadow-lg">
                 <div className="absolute inset-0 rounded-full bg-white/20 animate-pulse"></div>
-                <Bot size={20} className="text-white relative z-10" />
+                <img src={arosLogo}  size={20} className="text-white relative z-10" />
               </div>
               <div>
                 <h3 className="font-display font-bold text-white text-base tracking-wide">AROS AI</h3>

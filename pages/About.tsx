@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bot, Users, Clock, MapPin } from 'lucide-react';
-
+import aboutlogo from '../components/assets/aboutlogo.png';
 export const About: React.FC = () => {
   return (
     <div className="pb-24">
@@ -19,7 +19,7 @@ export const About: React.FC = () => {
           <div className="relative">
             <div className="absolute -inset-4 bg-brand-500/20 rounded-2xl blur-2xl"></div>
             <img 
-              src="https://picsum.photos/600/400?random=10" 
+              src={aboutlogo}
               alt="Team at work" 
               className="relative rounded-2xl shadow-2xl border border-slate-700 w-full"
             />
@@ -94,13 +94,13 @@ export const About: React.FC = () => {
               </div>
             </div>
             <div className="h-12 w-px bg-slate-700 hidden md:block"></div>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <Users className="text-brand-500" size={32} />
               <div>
                 <div className="text-2xl font-bold text-white">100+</div>
                 <div className="text-slate-400 text-sm">Happy Clients</div>
               </div>
-            </div>
+            </div> */}
             <div className="h-12 w-px bg-slate-700 hidden md:block"></div>
             <div className="flex items-center gap-4">
               <Bot className="text-brand-500" size={32} />
