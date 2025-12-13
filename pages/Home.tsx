@@ -156,7 +156,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Palette, TrendingUp, Monitor, Sparkles, Play } from 'lucide-react';
 import { Button } from '../components/Button';
-
+import afterlogo from '../components/assets/11_AROS.png';
 export const Home: React.FC = () => {
   return (
     <>
@@ -227,7 +227,7 @@ export const Home: React.FC = () => {
                 {/* This div's clip-path is animated to reveal the enhanced image */}
                 <div className="absolute inset-0 w-full h-full animate-scan-clip">
                   <img 
-                    src="../components/assets/11_AROS.png" 
+                    src={afterlogo} 
                     alt="AI Enhanced" 
                     className="absolute inset-0 w-full h-full object-cover saturate-150 contrast-110"
                   />
