@@ -156,7 +156,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Palette, TrendingUp, Monitor, Sparkles, Play } from 'lucide-react';
 import { Button } from '../components/Button';
-import afterlogo from '../components/assets/11_AROS.png';
+import afterlogo from '../assets/11_AROS.png';
 export const Home: React.FC = () => {
   return (
     <>
